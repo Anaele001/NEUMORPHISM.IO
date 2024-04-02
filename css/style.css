@@ -21,13 +21,15 @@ body {
 .main {
   margin: auto;
   width: 60%;
-  margin-top: 5%;
+  margin-top: 4%;
   min-width: 100vh;
   text-align: center;
 }
 
 .title h2 {
   font-size: 32px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
 }
 
 .title p {
@@ -40,38 +42,78 @@ body {
 
 .boxes {
   display: flex;
-  margin-top: 40px;
+  margin-top: 5%;
   width: 100%;
-  min-height: 400px;
+  height: auto;
   gap: 2%;
 }
 
 .left-box {
-  border: 1px solid #001f3f;
   width: 48%;
-  height: 500px;
-  text-align: justify;
   display: flex;
+  position: relative;
 }
+
 .light-sources-top-left {
+  background-color: yellow;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: unset;
+  bottom: unset;
   width: 30px;
   height: 30px;
+  cursor: pointer;
   border: 2px solid #001f3f;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: unset;
+  border-top-right-radius: unset;
+  border-top-left-radius: unset;
 }
+
 .light-sources-top-right {
+  position: absolute;
+  top: 0px;
+  left: unset;
+  right: 0;
+  bottom: unset;
   width: 30px;
   height: 30px;
   border: 2px solid #001f3f;
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: unset;
+  border-top-left-radius: unset;
 }
+
 .light-sources-buttom-left {
+  position: absolute;
+  top: unset;
+  left: 0px;
+  right: unset;
+  bottom: 0px;
   width: 30px;
   height: 30px;
   border: 2px solid #001f3f;
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
+  border-top-right-radius: 30px;
+  border-top-left-radius: unset;
 }
+
 .light-sources-buttom-right {
+  position: absolute;
+  top: unset;
+  left: unset;
+  right: 0px;
+  bottom: 0px;
   width: 30px;
   height: 30px;
   border: 2px solid #001f3f;
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
+  border-top-right-radius: unset;
+  border-top-left-radius: 30px;
 }
 
 .right-box {
@@ -82,10 +124,12 @@ body {
 }
 
 .center {
+  margin: auto;
   align-items: center;
-  width: 250px;
-  height: 250px;
-  border: 1px solid #001f3f;
+  width: 300px;
+  height: 300px;
+  border-radius: 50px;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
 .right-box {
@@ -95,7 +139,7 @@ body {
 .buttons {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5%;
+  margin-top: 10%;
   gap: 2%;
   justify-content: center;
 }
