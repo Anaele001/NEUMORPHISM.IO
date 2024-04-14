@@ -1,0 +1,1 @@
+export const lightsources = Array.from(document.querySelectorAll('.light-sources'));

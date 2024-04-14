@@ -55,7 +55,6 @@ body {
 }
 
 .light-sources-top-left {
-  background-color: yellow;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -79,6 +78,7 @@ body {
   bottom: unset;
   width: 30px;
   height: 30px;
+  cursor: pointer;
   border: 2px solid #001f3f;
   border-bottom-right-radius: unset;
   border-bottom-left-radius: 30px;
@@ -94,6 +94,7 @@ body {
   bottom: 0px;
   width: 30px;
   height: 30px;
+  cursor: pointer;
   border: 2px solid #001f3f;
   border-bottom-right-radius: unset;
   border-bottom-left-radius: unset;
@@ -109,11 +110,16 @@ body {
   bottom: 0px;
   width: 30px;
   height: 30px;
+  cursor: pointer;
   border: 2px solid #001f3f;
   border-bottom-right-radius: unset;
   border-bottom-left-radius: unset;
   border-top-right-radius: unset;
   border-top-left-radius: 30px;
+}
+
+.active {
+  background-color: yellow;
 }
 
 .center {
@@ -146,6 +152,10 @@ body {
   margin-top: 10%;
   gap: 2%;
   justify-content: center;
+}
+
+.buttons a {
+  color: #001f3f;
 }
 
 .row {
@@ -210,4 +220,32 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: #001f3f;
   border-radius: 70px;
   margin-top: -5px;
+}
+
+.shape-switch {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+  flex-grow: 1;
+}
+
+.shape-switch button {
+  flex-grow: 1;
+  padding: 0 10px;
+  background-color: #001f3f;
+  color: #f6f5f7;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  opacity: 0.8;
+  width: 20px;
+}
+
+.shape-switch button svg {
+  width: 50px;
+}
+
+.shape-switch button.active {
+  opacity: 1;
 }
